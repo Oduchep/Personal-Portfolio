@@ -1,0 +1,217 @@
+body
+{
+  z-index: 1;
+}
+
+#navbar{
+	position: fixed;
+	z-index: 2;
+	background-color: #e67300;
+	width: 100%;
+	margin: 0px;
+	top: 0;
+}
+
+.nav-link{
+	list-style-type: none;
+	margin: auto 20px auto auto;
+
+}
+
+.nav-link a{
+	font-size: 1.5em;
+	color: white;	
+	float: right;
+	text-align: center;
+	padding: 20px 16px;
+	text-decoration: none;
+	margin-top: 0px;
+}
+
+.nav-link a:hover{
+	background-color: #ffe6cc;
+	color: black;
+}
+
+#welcome-section{
+	background-color: #00004d;
+	color: white;
+	margin-bottom: 0px;
+	padding-top: 0px;
+  	margin-top: 0px;
+  	display: block;
+  	height: 100vh;
+	
+}
+
+#welcome-section h1{
+	font-size: 3em;
+	text-align: center;
+	padding-top: 100px;
+	margin-bottom: 0px;
+}
+
+#welcome-section p{
+	color: #e67300;
+	font-size: 2em;
+	text-align: center;
+	margin-top: 0px;
+	font-style: italic;
+}
+
+#projects{
+	margin-top: 0px;
+	background-color: #e67300;
+	padding: auto;
+}
+
+#projects-header{
+	margin-top: 0px;
+	color: #00004d;
+	font-size: 2em;
+	text-decoration: underline;
+	font-style: oblique;
+	text-align: center;
+	padding: 40px;
+	font-weight: bold;
+}
+
+#projects-grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	width: 100%;
+	grid-gap: 2rem;
+	max-width: 1280px;
+	margin: 0 auto;
+	margin-bottom: 6rem;
+}
+
+.project-title {
+	color: white;
+	margin: 20px auto;
+	font-size: 1.4em;
+	padding: 20px auto;
+	font-style: monospace;
+	text-align: center;
+}
+
+.project-tile{
+	text-decoration: none;
+}
+
+.project-grid{
+	background-color: #00004d;
+}
+
+.project-image{
+	height: calc(110% - 6.8rem);
+	width: 100%;
+	object-fit: cover;
+}
+
+img{
+	display: block;
+	width: 80%;
+}
+
+#show-more{
+	text-align: center;
+	display: inline-block;
+	background-color: #00004d;
+	color: white;
+	font-size: 1.4rem;
+	padding: 10px 10px;
+	margin-left: 45%;
+	font-style: monospace;
+	margin-bottom: 20px;
+}
+
+.contact-section{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    background: #00004d;
+}
+
+#contact-header{
+	margin: 0px auto 0px auto;
+	color: white;
+	font-size: 2.6em;
+}
+
+.contact-section p{
+	color: #e67300;
+	font-size: 2em;
+	text-align: center;
+	margin-top: 0px;
+	font-style: italic;
+}
+
+.profile-link{
+	color: #03fccf;
+	font-size: 2em;
+	font-style: monospace;
+	text-decoration: none;
+	margin: auto 30px;
+}
+
+@media(max-width: 768px){
+#projects-grid{
+	display: grid;
+	grid-template-columns: 1fr;
+	width: 100%;
+	grid-gap: 1rem;
+	max-width: 800px;
+	margin: 0 auto;
+	margin-bottom: 2rem;
+}
+
+#welcome-section{
+	width: 100%;
+	margin: 0px auto auto auto;
+}
+
+#welcome-section h1 p{
+	font-size: 1em;
+	margin-bottom: 0px;
+}
+
+#projects{
+	width: 100%;
+	margin: auto;
+
+}
+
+.contact-section{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+    padding: 0px;
+}
+
+#contact-header{
+	margin: 0px;
+	padding: 0px;
+	color: white;
+	font-size: 1.8em;
+	
+}
+
+.contact-section p{
+	font-size: 1.5em;
+	margin-top: 0px;
+	font-style: italic;
+}
+
+.profile-link{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+}
